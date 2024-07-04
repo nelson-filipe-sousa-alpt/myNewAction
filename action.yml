@@ -4,7 +4,7 @@ author: nelson
 runs:
   using: 'composite'
   steps:
-  - uses: actions/ceckout@v4
+  - uses: actions/checkout@v4
   - run: echo hello world
     shell: bash
   - run: pwd
