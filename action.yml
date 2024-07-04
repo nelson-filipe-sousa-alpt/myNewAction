@@ -2,12 +2,13 @@ name: My New Action 2024-07-04
 description: Another new Action
 author: nelson
 runs:
-  using: echo hello world
   using: 'composite'
   steps:
   - uses: actions/ceckout@v4
   - run: echo hello world
     shell: bash
   - run: pwd
+    shell: bash
+  - run: ls
     shell: bash
   
